@@ -79,8 +79,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const login = () => {
     const clientId =
-      import.meta.env.VITE_GOOGLE_CLIENT_ID ||
-      "544717861390-ij8l1inapbaekgcr8vavpsfc17va4fkb.apps.googleusercontent.com";
+    import.meta.env.VITE_GOOGLE_CLIENT_ID ;
 
     if (!window.google?.accounts?.id) {
       alert("Google Identity Services script not loaded yet!");

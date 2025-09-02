@@ -9,7 +9,7 @@ Frontend
 - npm install
 - create .env with:
     VITE_API_URL=http://localhost:5000/api
-    VITE_GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+    VITE_GOOGLE_CLIENT_ID=your-google-client-id
 - npm run dev
 
 Use the app
