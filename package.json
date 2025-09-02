@@ -1,0 +1,19 @@
+{
+  "name": "finance-ai-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered personal finance tracker with Google OAuth and real-time dashboard updates",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
